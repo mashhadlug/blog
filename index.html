@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="fa">
 
 <head>
- <meta charset="utf-8">
-  <title>وضعیت جلسات مشهدلاگ</title>
-  <meta name="author" content="مشهدلاگ">
-  <meta name="description" content="وضعیت جلسات مشهدلاگ">
- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>وضعیت جلسات مشهدلاگ</title>
+    <meta name="author" content="مشهدلاگ">
+    <meta name="description" content="وضعیت جلسات مشهدلاگ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body style="text-align: center;">
 
-  <p>تست</p>
+    <h1>مشهدلاگ ۲۵۹ به زودی برگزار میشود</h1>
+    <h3>تاریخ برگزاری: ۱۴ بهمن ۱۴۰۰ ساعت ۱۸ در اسکایپ</h3>
+    <p style="font-size: 20px;" id="demo"></p>
+    <a target="_blank" href="https://t.me/mashhadlug/345">اطلاعات بیشتر درباره جلسه</a>
+    <br><br>
+    <a target="_blank"
+        href="https://calendar.google.com/calendar/u/0?cid=N2NxZWgyMDdiZDI2a2Y4ZXBzdHNka3NxajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">تقویم
+        گوگل مشهدلاگ</a>
+    <br><br>
+    <button disabled>ورود به جلسه</button>
+
+    <!-- copy from: https://www.w3schools.com/howto/howto_js_countdown.asp -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 3, 2022 18:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + " روز " + hours + " ساعت " +
+                minutes + " دقیقه " + seconds + " ثانیه ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 
 </body>
 
