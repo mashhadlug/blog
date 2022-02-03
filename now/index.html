@@ -20,7 +20,7 @@
         href="https://calendar.google.com/calendar/u/0?cid=N2NxZWgyMDdiZDI2a2Y4ZXBzdHNka3NxajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">تقویم
         گوگل مشهدلاگ</a>
     <br><br>
-    <button disabled>ورود به جلسه</button>
+    <button >ورود به جلسه</button>
 
     <!-- copy from: https://www.w3schools.com/howto/howto_js_countdown.asp -->
     <script>
@@ -51,6 +51,14 @@
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
         }, 1000);
+    </script>
+    
+    <script>
+        var btn = document.getElementById('login')
+        var clickHandler = function () {
+          window.open('https://join.skype.com/IyiDi0wqORSR', '_blank').focus();
+        }
+        btn.addEventListener('click', clickHandler)
     </script>
 
 </body>
