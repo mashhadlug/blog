@@ -1,6 +1,13 @@
-body {
-    text-align: center;
+p { 
+    font-size: 20px;
 }
 #demo {
-    font-size: 20px;
+    color: initial;
+}
+.title {
+    text-align: center;
+}
+a {
+    color: black;
+    text-decoration: none;
 }

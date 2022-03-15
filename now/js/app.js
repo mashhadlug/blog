@@ -16,16 +16,22 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    let demo = document.getElementById("demo")
+
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + " روز " + hours + " ساعت " +
-        minutes + " دقیقه " + seconds + " ثانیه ";
+    demo.innerHTML = days + " روز " + hours + " ساعت " +
+        minutes + " دقیقه " + seconds + " ثانیه " + "تا شروع جلسه";
+    demo.parentElement.style.color = "#98C379";
 
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "این رویداد قبلا برگزار شده";
+        demo.innerHTML = "این رویداد قبلا برگزار شده است";
+        demo.parentElement.style.color = "#E06C75"
     }
 }, 1000);
+
+
 
 
 var btn = document.getElementById('login')
