@@ -1,11 +1,11 @@
+body {
+    text-align: center;
+}
 p { 
     font-size: 20px;
 }
 #demo {
     color: initial;
-}
-.title {
-    text-align: center;
 }
 a {
     color: black;
