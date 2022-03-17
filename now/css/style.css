@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+p { 
+    font-size: 20px;
+}
+#demo {
+    color: initial;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
