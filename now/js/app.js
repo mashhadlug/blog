@@ -36,7 +36,7 @@ var x = setInterval(function () {
 
 var btn = document.getElementById('login')
 var clickHandler = function () {
-    window.open('https://join.skype.com/IF6rrcMx05nf', '_blank').focus();
+    window.open('https://join.skype.com/FjDDEdOXEn56', '_blank').focus();
 }
 btn.addEventListener('click', clickHandler)
 
